@@ -6,7 +6,7 @@ import pandas as pd
 import requests
 
 '''
-# TaxiFare Model
+# WaGAN image
 '''
 
 st.markdown('''
