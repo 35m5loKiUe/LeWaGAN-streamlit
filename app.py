@@ -41,7 +41,7 @@ params_api = {'v1':v1,
           'v9':v9,
           'v10':v10}
 
-url = 'http://127.0.0.1:8000/image?'
+url = 'https://lewagandocker-vl3hfwrb3a-ew.a.run.app/image?'
 
 
 res = requests.get(url, params=params_api)
