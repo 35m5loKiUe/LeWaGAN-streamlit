@@ -48,7 +48,7 @@ params_api = {'v1':v1,
           'seed':seed
 }
 
-url = 'https://lewagandocker-vl3hfwrb3a-ew.a.run.app/iamges?'
+url = 'https://lewagandocker-vl3hfwrb3a-ew.a.run.app/images?'
 
 
 res = requests.get(url, params=params_api)
