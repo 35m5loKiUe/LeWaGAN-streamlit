@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 import requests
 
@@ -8,7 +8,7 @@ import requests
 # le WaGAN Presents
 '''
 
-load_dotenv()
+#load_dotenv()
 
 
 st.markdown('''
