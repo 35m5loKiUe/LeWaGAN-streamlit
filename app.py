@@ -55,8 +55,7 @@ params_init = {'v1':1,
           'seed':seed
 }
 
-url = 'http://127.0.0.1:8000/image?'
-
+url = 'https://lewagandocker-vl3hfwrb3a-ew.a.run.app/image?'
 
 res = requests.get(url, params=params_api)
 res_init = requests.get(url, params=params_init)
