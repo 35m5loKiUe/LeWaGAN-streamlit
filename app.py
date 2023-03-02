@@ -19,7 +19,7 @@ st.markdown('''
 
 with st.sidebar:
 
-    st.markdown('''Les différents vecteurs propres influent sur des paramètres différents des images générées''')
+    st.markdown('''Les vecteurs propres influent sur les paramètres des images générées''')
 
 
     # initializing with a random number
@@ -67,7 +67,7 @@ with col1:
 with col2:
     if res_init.status_code == 200:
                 ### Display the image returned by the API
-        st.image(res_init.content, caption="Image générée par l'AI ☝️")
+        st.image(res_init.content, caption="Image générée par l'IA ☝️")
     else:
         st.markdown("**Oops**, something went wrong 😓 Please try again.")
         print(res_init.status_code, res_init.content)
