@@ -60,7 +60,7 @@ url = 'https://lewagandocker-vl3hfwrb3a-ew.a.run.app/image?'
 res = requests.get(url, params=params_api)
 res_init = requests.get(url, params=params_init)
 
-col1, col2, col3, col4= st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     st.markdown(" ")
 
@@ -83,3 +83,6 @@ with col4:
     else:
         st.markdown("**Oops**, something went wrong 😓 Please try again.")
         print(res.status_code, res.content)
+
+with col5:
+    st.markdown(" ")
