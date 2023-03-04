@@ -62,29 +62,40 @@ url = 'https://lewagandocker-vl3hfwrb3a-ew.a.run.app/image?'
 res = requests.get(url, params=params_api)
 res_init = requests.get(url, params=params_init)
 
-col1, col2, col3, col4, col5 = st.columns(5)
-with col1:
-    st.markdown(" ")
+col1, col2= st.columns([3,3])
 
-with col2:
+with col1:
+  
     if res_init.status_code == 200:
                 ### Display the image returned by the API
-        st.image(res_init.content, caption="Image générée par l'IA ☝️")
+        st.image(res_init.content,caption="col1, col2= st.columns([3,3])
+
+with col1:
+  
+    if res_init.status_code == 200:
+                ### Display the image returned by the API
+        st.image(res_init.content,caption=" ☝️ \n Image générée par l'IA", use_column_width=True)
     else:
         st.markdown("**Oops**, something went wrong 😓 Please try again.")
         print(res_init.status_code, res_init.content)
 
-with col3:
-    st.markdown(" ")
-
-
-with col4:
+with col2:
+  
     if res.status_code == 200:
                 ### Display the image returned by the API
-        st.image(res.content, caption="Image générée par l'AI, avec les vecteurs propres associés ☝️")
+        st.image(res.content, caption=" ☝️ \n Image générée par l'AI, avec les vecteurs propres associés ", use_column_width=True)
+    else:
+        st.markdown("**Oops**, something went wrong 😓 Please try again.")
+        print(res.status_code, res.content)Image générée par l'IA", use_column_width=True)
+    else:
+        st.markdown("**Oops**, something went wrong 😓 Please try again.")
+        print(res_init.status_code, res_init.content)
+
+with col2:
+  
+    if res.status_code == 200:
+                ### Display the image returned by the API
+        st.image(res.content, caption="Image générée par l'AI, avec les vecteurs propres associés ☝️", use_column_width=True)
     else:
         st.markdown("**Oops**, something went wrong 😓 Please try again.")
         print(res.status_code, res.content)
-
-with col5:
-    st.markdown(" ")
